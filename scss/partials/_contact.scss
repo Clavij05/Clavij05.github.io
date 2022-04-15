@@ -1,0 +1,119 @@
+.header-contact{
+    height: 35vh;
+    overflow: hidden;
+    background-position: bottom;    
+}
+.header-contact h1{
+    color: rgb(253, 253, 253);
+    font-size: 20px;
+}
+
+
+.main_contact{
+
+    margin-top: 30px;
+    height: 100%;
+    background-color: #181818;
+    color: #fff;
+    padding: 0px 25px;
+    
+}
+.content{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    
+    
+
+}
+.contacto_h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.contacto_h1 span{
+    color:rgb(248, 8, 8);
+}
+.contact_wrapper{
+    box-shadow:0 0 20px 0 rgba(255,255,255,.3);
+
+}
+.contact_wrapper > *{
+        padding: 16px;
+}
+.contact-form{
+    background-color: #222222;
+    
+
+}
+.contact-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact-form form .block{
+    grid-column: 1/3;
+}
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+    
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 0.7em;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #d63031;
+    outline: none;
+    color: #fff;
+}
+.contact-form form button{
+        background-color: #b70e21;
+        border: 0;
+        text-transform:uppercase;
+        padding: 1em;
+}
+.contact-form form button:hover,
+.contact-form form button:focus{
+        background: #d63031;
+        color: black;
+        transition: .3s;
+        outline: 0;
+}
+.contact-info{
+    background-color: #000;
+    
+}
+.contact-info h4,
+.contact-info ul,
+.contact-info p{
+    text-align: center;
+    margin:0 0 1rem 0 ;
+}
+.contact-info ul{
+    list-style: none;
+    padding: 0;
+}
+.contact-info ul li {
+    padding: .3em;
+}
+@media screen and (min-width:768px){
+    
+    .contact_wrapper{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact_wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p{
+        padding: 1em;
+        text-align:left;
+    }
+}

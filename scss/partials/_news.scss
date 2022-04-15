@@ -1,0 +1,225 @@
+
+/* 
+.header-news{
+    @extend .header-contact   
+}
+ */
+.newsMain{
+    height: 300vh;
+    width: 100%;
+}
+.container-nacional, .container-internacional{
+    height: 150vh;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #fff;
+    border: 3px solid #1a436b;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+.col-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.col-2{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-right: 30px;
+}
+.caja{
+    height: 250px;
+    margin-left: 1rem;
+    margin-top: 20px;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 0.7;
+    box-shadow: 2px 2px 5px #999;
+
+    &_content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0,0,0,.4);
+        opacity: 0;
+        transition: .5s;
+
+}
+
+    
+}
+.titulo_noticias{
+    grid-column: 1/3;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+    letter-spacing: 0.05rem;
+    font-family: 'Montserrat', sans-serif;
+}
+    
+.caja_content h3, .content_a, .caja_index_content{
+    color: rgba(255,255,255,.8);
+    margin: 10px;
+
+}
+.caja:hover .caja_content{
+    opacity: 1;
+    
+}
+.caja:hover{
+    opacity: 1;
+    transform:scale(1.03);
+    overflow: hidden;
+}
+.tablas{
+    height:380px;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid black;
+}
+.titulo_fixture{
+    height: 20px;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+    font-size: 1rem;
+    background-color: rgb(64, 64, 248);
+}
+th{
+    padding: 5px 10px;
+}
+td {
+    padding: 5px 10px;
+    
+}
+.bg-tabla {
+    background-color: #999;
+}
+.fixture{
+    background: url(/img/fixture.jpeg);
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+}
+.internacional1, .internacional4{
+    grid-column: 1/3;
+}
+.flayer{
+    height: 85%;
+    width: 95%;
+    background:url(/img/flayer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 120px;
+}
+.nacionales1{
+    background: url(/img/nacional/01-NA.jpg);
+    background-size: cover;
+}
+.nacionales2{
+    background: url(/img/nacional/02-NA.jpg);
+    background-size: cover;
+}
+.nacionales3{
+    background: url(/img/nacional/03-NA.jpg);
+    background-size: cover;
+}
+.nacionales4{
+    background: url(/img/nacional/04-NA.jpg);
+    background-size: cover;
+}
+.nacionales5{
+    background: url(/img/nacional/05-NA.jpg);
+    background-size: cover;
+}
+.nacionales6{
+    background: url(/img/nacional/06-NA.jpg);
+    background-size: cover;
+}
+
+.internacional1{
+    background: url(/img/internacional/01-IN.jpg);
+    background-size: cover;
+}
+.internacional2{
+    background: url(/img/internacional/02-IN.jpg);
+    background-size: cover;
+}
+.internacional3{
+    background: url(/img/internacional/03-IN.jpg);
+    background-size: cover;
+}
+.internacional4{
+    background: url(/img/internacional/04-IN.jpg);
+    background-size: cover;
+}
+/* //responsive-main-news// */
+@media screen and (max-width:800px){
+    
+    .newsMain{
+         height: 480vh; 
+       
+    }
+    .container-nacional, .container-internacional{
+        
+        height: 280vh;
+        width: 80%;
+        border: none;
+        background-color: #0d2033;
+        margin: 0;
+
+        display:flex;
+        flex-direction: column;
+        margin-left: 20px;
+        justify-content: center;
+    }
+    .container-internacional{
+        margin-top: -230px;
+    }
+    .caja{
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .col-1{
+        display: flex;
+        flex-direction: column;
+    }
+    .col-2{
+        width: 100%;
+        height: 100%;
+    }
+    .fixture, .flayer,.tablas{
+        display: none;
+    }
+    .titulo_noticias{
+        font-size: 25px;
+        color: #fff;
+        
+    }
+}

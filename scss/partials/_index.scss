@@ -1,0 +1,443 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #0d2033;
+}
+
+/* <!--::index-Cabecera::--> */
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/IMG/portada.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+header h1{
+    color: #fff;
+    margin-left: 20px;
+    letter-spacing: 1px;
+}
+header nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.bar-btn{
+    font-size: 25px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background-color: #0a141d;
+    text-align: center;
+    transition: all .5s;
+}
+
+.nav-menu li{
+    
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+    letter-spacing: 1px;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.nav-menu li a.active, .nav-menu li a:hover{
+    color: rgb(248, 8, 8);
+    transition: .3s;
+}
+
+#check{
+    display: none;
+}
+#check:checked ~ .nav-menu {
+    height: 100vh;
+}
+#check:checked ~ .nav-menu li{
+    display:block;
+}
+.banner-text{
+    padding: 0 30px;
+    margin-top: 140px;
+    text-align: center;
+    color: #0a141d;
+    letter-spacing: 1px;
+}
+.banner-text div a {
+    text-decoration: none;
+}
+.banner-text h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.banner-text span{
+    color: rgb(248, 8, 8);
+}
+.banner-text h3 {
+    font-size:16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.button1{
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color: rgb(248, 8, 8);
+    color: #fff;
+    border-radius:5px;
+}
+.button1:hover{
+    background-color: #fff;
+    color: rgb(248, 8, 8);
+    transition: .5s;
+}
+.button2{
+    @extend .button1;
+    background-color: #fff;
+    color:rgb(248, 8, 8);
+}
+.button2:hover{
+    background-color: rgb(248, 8, 8);
+    color: #fff;
+    transition: .5s;
+}
+
+/* <!--::General-Pie de Pagina::--> */
+
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+    margin-top: 40px;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color:#fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+/* <!--::General-Responsive-pie de pagina::--> */
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns:repeat(1, 1fr);
+        gap:30px;
+        padding: 35px 0px;
+    }  
+}
+/* <!--::General-Responsive-Cabecera::--> */
+
+@media screen and (min-width:768px){
+    header h1{
+        margin-left: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+    nav{
+        height: 100px;
+    }
+    .bar-btn{
+        display: none;
+    }
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top:0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+    .nav-menu li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+    .nav-menu li a {
+        font-size: 12px;
+    }
+    .banner-text h2{
+        font-size: 70px;
+        margin-bottom: 30px;
+    }
+    .banner-text h3{
+        font-size: 20px;
+    }
+    
+
+}
+
+/* <!--::index-Contenido::--> */
+.titulo-main{
+    height: 10vh;
+    width: 100%;
+    background-color: #0a141d;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    margin: 20px 0px;
+    letter-spacing: 0.05rem;
+
+    display: flex;
+    justify-content: space-around;
+}
+.titulo-main h2{
+    font-size: 20px;
+    letter-spacing: 0.05rem;
+}
+.titulo-main h3{
+    font-size: 12px;
+}
+.titulo-main h3 span{
+    color: rgb(39, 187, 39);
+    font-size: 20px;
+}
+.titulo-main > .button2{
+    text-decoration: none;
+}
+.contenido-main{
+    height:85vh;
+    background-color: #0d2033;
+}
+.contenido-main h3{
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.05rem;
+    padding: 40px;
+    font-size: 40px;
+}
+
+.card-new-father{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    
+
+}
+.card-new{
+    height: 70vh;
+    width: 33.33%;
+    
+    
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px rgba(255,255,255,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    text-align: center;
+    
+
+}
+.card-new:hover{
+    box-shadow: 5px 5px 20px rgba(255,255,255,0.4);
+    transform: translateY(-3%);
+}
+.card-new > .btn-nac {
+    text-decoration: none;
+    color: #efefef; 
+    background-color: #0a141d;
+    transition: all 400ms ease;
+    padding: 15px 15px;
+    border-radius: 5px;
+    
+    
+}
+.btn-inter{
+    @extend .btn-nac
+}
+.btn-contact{
+    @extend .btn-nac
+}
+.card-new a:hover{
+    color: rgb(248, 8, 8);
+    background-color: #efefef;
+    
+}
+.nacionales{
+    background: url(/img/index_nacional.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.internacionales{
+    background: url(/img/index_internacional.jpg);
+    background-size: cover;
+    
+}
+.contactanos{
+    background: url(/img/contactanos.png);
+    background-size: cover;
+}
+.suscribete{
+    margin-top: 4rem;
+    height: 60vh;
+    width: 100%;
+    background: url(/img/suscribete.jpg);
+}
+.conten-sub{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,22,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+.conten-sub h2{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 0.05rem;
+}
+
+.conten-sub p {
+    color: #fff;
+    font-size: 17px;
+    margin-bottom:25px;
+    max-width: 500px;
+    text-align: center;
+}
+.conten-sub form{
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+}
+.conten-sub form .campo{
+        width: 100%;
+        padding: 15px 15px;
+        font-size:16px;
+        border: none;
+        border-radius:3px 0px 0px 3px;
+        outline: 0px;
+}
+.conten-sub form .btn-sub{
+    padding: 15px 15px;
+    border: none;
+    font-size: 16px;
+    border-radius: 0px 3px 3px 0px;
+    background: #68C3A3;
+    color: #fff;
+    cursor: pointer;
+    outline: 0px;
+    letter-spacing: 0.05rem;
+}
+.conten-sub form .btn-sub:hover{
+    background: #3eba8f;
+}
+/* <!--::Index-Responsive-main::--> */
+
+@media screen and (max-width:800px){
+    
+    .titulo-main h2{
+        font-size: 10px;
+    }
+    .titulo-main h3{
+        font-size: 10px;
+    }
+    .titulo-main > .button2{
+        padding: 10px 10px;
+        margin-left: 15px;
+    }
+    .contenido-main{
+        height: 170vh;
+    }
+    .contenido-main h3{
+        padding: 25px;
+        font-size: 30px;
+    }
+    .card-new-father{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 2rem;
+
+    }
+    .card-new{
+        height: 50vh;
+        width: 100%;
+    }
+    .nacionales{
+        animation:slideInLeft; 
+        animation-duration: 4s; 
+    }
+    .internacionales{
+        animation:slideInLeft; 
+        animation-duration: 6s; 
+    }
+    .contactanos{
+        animation:slideInLeft; 
+        animation-duration: 8.5s; 
+    }
+    .card-new:hover{
+        transform: none;
+    }
+    .contactanos{
+        background-position: center;
+    }
+    .conten-sub h2{
+        text-align: center;
+    }
+}
