@@ -8,13 +8,13 @@ body{
 header{
     width: 100%;
     height: 100vh;
-    background-image: url(/IMG/portada.jpg);
+    background: url(/IMG/portada-cabecera.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 header h1{
-    color: #fff;
+    color: $blanco;
     margin-left: 20px;
     letter-spacing: 1px;
 }
@@ -29,7 +29,7 @@ header nav{
 
 .bar-btn{
     font-size: 25px;
-    color: #fff;
+    color: $blanco;
     margin-right: 20px;
     cursor: pointer;
 }
@@ -38,7 +38,7 @@ header nav{
     width: 100%;
     height: 0vh;
     top: 100px;
-    background-color: #0a141d;
+    background-color: $bgOscuro;
     text-align: center;
     transition: all .5s;
 }
@@ -53,13 +53,13 @@ header nav{
 }
 .nav-menu li a{
     text-decoration: none;
-    color: #fff;
+    color: $blanco;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
 }
 .nav-menu li a.active, .nav-menu li a:hover{
-    color: rgb(248, 8, 8);
+    color: $button;
     transition: .3s;
 }
 
@@ -76,7 +76,7 @@ header nav{
     padding: 0 30px;
     margin-top: 140px;
     text-align: center;
-    color: #0a141d;
+    color: $bgOscuro;
     letter-spacing: 1px;
 }
 .banner-text div a {
@@ -87,7 +87,7 @@ header nav{
     margin-bottom: 30px;
 }
 .banner-text span{
-    color: rgb(248, 8, 8);
+    color: $button;
 }
 .banner-text h3 {
     font-size:16px;
@@ -97,23 +97,23 @@ header nav{
 .button1{
     margin-right: 40px;
     padding: 10px 30px;
-    background-color: rgb(248, 8, 8);
-    color: #fff;
+    background-color: $button;
+    color: $blanco;
     border-radius:5px;
 }
 .button1:hover{
-    background-color: #fff;
-    color: rgb(248, 8, 8);
+    background-color: $blanco;
+    color: $button;
     transition: .5s;
 }
 .button2{
     @extend .button1;
-    background-color: #fff;
-    color:rgb(248, 8, 8);
+    background-color: $blanco;
+    color:$button;
 }
 .button2:hover{
-    background-color: rgb(248, 8, 8);
-    color: #fff;
+    background-color: $button;
+    color: $blanco;
     transition: .5s;
 }
 
@@ -121,7 +121,7 @@ header nav{
 
 .pie-pagina{
     width: 100%;
-    background-color: #0a141d;
+    background-color: $bgOscuro;
     margin-top: 40px;
 }
 .pie-pagina .grupo-1{
@@ -145,12 +145,12 @@ header nav{
     width: 250px;
 }
 .pie-pagina .grupo-1 .box h2{
-    color:#fff;
+    color:$blanco;
     margin-bottom: 25px;
     font-size: 20px;
 }
 .pie-pagina .grupo-1 .box p{
-    color: #efefef;
+    color: $pie;
     margin-bottom: 10px;
 }
 .pie-pagina .grupo-1 .red-social a{
@@ -159,9 +159,9 @@ header nav{
     width: 45px;
     height: 45px;
     line-height: 45px;
-    color: #fff;
+    color: $blanco;
     margin-right: 10px;
-    background-color: #0d2033;
+    background-color: $bgContent;
     text-align: center;
     transition: all 300ms ease;
 }
@@ -169,10 +169,10 @@ header nav{
     color: aqua;
 }
 .pie-pagina .grupo-2{
-    background-color: #0a1a2a;
+    background-color: $bgOscuro2;
     padding: 15px 10px;
     text-align: center;
-    color: #fff;
+    color: $blanco;
 }
 .pie-pagina .grupo-2 small{
     font-size: 15px;
@@ -234,8 +234,8 @@ header nav{
 .titulo-main{
     height: 10vh;
     width: 100%;
-    background-color: #0a141d;
-    color: #fff;
+    background-color: $bgOscuro;
+    color: $blanco;
     text-align: center;
     align-items: center;
     margin: 20px 0px;
@@ -260,11 +260,11 @@ header nav{
 }
 .contenido-main{
     height:85vh;
-    background-color: #0d2033;
+    background-color: $bgContent;
 }
 .contenido-main h3{
     text-align: center;
-    color: #fff;
+    color: $blanco;
     letter-spacing: 0.05rem;
     padding: 40px;
     font-size: 40px;
@@ -298,8 +298,8 @@ header nav{
 }
 .card-new > .btn-nac {
     text-decoration: none;
-    color: #efefef; 
-    background-color: #0a141d;
+    color: $pie; 
+    background-color: $bgOscuro;
     transition: all 400ms ease;
     padding: 15px 15px;
     border-radius: 5px;
@@ -313,22 +313,22 @@ header nav{
     @extend .btn-nac
 }
 .card-new a:hover{
-    color: rgb(248, 8, 8);
-    background-color: #efefef;
+    color: $button;
+    background-color: $pie;
     
 }
 .nacionales{
-    background: url(/img/index_nacional.jpg);
+    background: url(/img/index-nacionales.jpg);
     background-position: center;
     background-size: cover;
 }
 .internacionales{
-    background: url(/img/index_internacional.jpg);
+    background: url(/img/index-internacional.jpg);
     background-size: cover;
     
 }
 .contactanos{
-    background: url(/img/contactanos.png);
+    background: url(/img/index-contactanos.png);
     background-size: cover;
 }
 .suscribete{
@@ -347,14 +347,14 @@ header nav{
     flex-direction: column;
 }
 .conten-sub h2{
-    color: #fff;
+    color: $blanco;
     font-size: 30px;
     margin-bottom: 10px;
     letter-spacing: 0.05rem;
 }
 
 .conten-sub p {
-    color: #fff;
+    color: $blanco;
     font-size: 17px;
     margin-bottom:25px;
     max-width: 500px;
@@ -379,7 +379,7 @@ header nav{
     font-size: 16px;
     border-radius: 0px 3px 3px 0px;
     background: #68C3A3;
-    color: #fff;
+    color: $blanco;
     cursor: pointer;
     outline: 0px;
     letter-spacing: 0.05rem;

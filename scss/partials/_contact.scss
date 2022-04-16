@@ -1,5 +1,5 @@
 .header-contact{
-    height: 35vh;
+    height: 20vh;
     overflow: hidden;
     background-position: bottom;    
 }
@@ -14,7 +14,7 @@
     margin-top: 30px;
     height: 100%;
     background-color: #181818;
-    color: #fff;
+    color: $blanco;
     padding: 0px 25px;
     
 }
@@ -33,7 +33,7 @@
 }
 
 .contacto_h1 span{
-    color:rgb(248, 8, 8);
+    color:$button;
 }
 .contact_wrapper{
     box-shadow:0 0 20px 0 rgba(255,255,255,.3);
@@ -67,9 +67,9 @@
     padding: 0.7em;
     border: none;
     background: none;
-    border-bottom: 1px solid #d63031;
+    border-bottom: 1px solid $buttonC;
     outline: none;
-    color: #fff;
+    color: $blanco;
 }
 .contact-form form button{
         background-color: #b70e21;
@@ -79,8 +79,8 @@
 }
 .contact-form form button:hover,
 .contact-form form button:focus{
-        background: #d63031;
-        color: black;
+        background: $buttonC;
+        color: #000;
         transition: .3s;
         outline: 0;
 }

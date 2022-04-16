@@ -4,17 +4,22 @@
     @extend .header-contact   
 }
  */
+
 .newsMain{
     height: 300vh;
     width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    
 }
 .container-nacional, .container-internacional{
     height: 150vh;
     width: 80%;
     margin: 0 auto;
     margin-top: 30px;
-    background-color: #fff;
-    border: 3px solid #1a436b;
+    background-color: $blanco;
+    border: 3px solid $borderNew;
+    
+    
 
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -32,6 +37,7 @@
         gap: 2rem;
         margin-right: 30px;
 }
+
 .caja{
     height: 250px;
     margin-left: 1rem;
@@ -42,14 +48,14 @@
     flex-direction: column;
     justify-content: end;
     text-align: center;
-    color: white;
     overflow: hidden;
+    
 
     background-repeat: no-repeat;
     background-size: cover;
 
     opacity: 0.7;
-    box-shadow: 2px 2px 5px #999;
+    /* box-shadow: 2px 2px 5px #999; */
 
     &_content{
         width: 100%;
@@ -61,6 +67,8 @@
         background: rgba(0,0,0,.4);
         opacity: 0;
         transition: .5s;
+        
+        font-weight: 200;
 
 }
 
@@ -72,14 +80,17 @@
     padding-top: 20px;
     font-size: 30px;
     letter-spacing: 0.05rem;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
 }
     
 .caja_content h3{
     color: rgba(255,255,255,.8);
     margin: 10px;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 1rem;
 
 }
+
 .caja:hover .caja_content{
     opacity: 1;
     
@@ -103,7 +114,7 @@
     height: 20px;
     text-align: center;
     padding-top: 5px;
-    color: white;
+    color: $blanco;
     font-size: 1rem;
     background-color: rgb(64, 64, 248);
 }
@@ -118,7 +129,7 @@ td {
     background-color: #999;
 }
 .fixture{
-    background: url(/img/fixture.jpeg);
+    background: url(/img/new-fixture.jpeg);
     width: 100%;
     height: 100%;
     margin-bottom: 10px;
@@ -131,51 +142,51 @@ td {
 .flayer{
     height: 85%;
     width: 95%;
-    background:url(/img/flayer.jpg);
+    background:url(/img/new-flayer-worldcupfem.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     margin-top: 120px;
 }
 .nacionales1{
-    background: url(/img/nacional/01-NA.jpg);
+    background: url(/img/nacional/01-New-nacionales.jpg);
     background-size: cover;
 }
 .nacionales2{
-    background: url(/img/nacional/02-NA.jpg);
+    background: url(/img/nacional/02-New-nacionales.jpg);
     background-size: cover;
 }
 .nacionales3{
-    background: url(/img/nacional/03-NA.jpg);
+    background: url(/img/nacional/03-New-nacionales.jpg);
     background-size: cover;
 }
 .nacionales4{
-    background: url(/img/nacional/04-NA.jpg);
+    background: url(/img/nacional/04-New-nacionales.jpg);
     background-size: cover;
 }
 .nacionales5{
-    background: url(/img/nacional/05-NA.jpg);
+    background: url(/img/nacional/05-New-nacionales.jpg);
     background-size: cover;
 }
 .nacionales6{
-    background: url(/img/nacional/06-NA.jpg);
+    background: url(/img/nacional/06-New-nacionales.jpg);
     background-size: cover;
 }
 
 .internacional1{
-    background: url(/img/internacional/01-IN.jpg);
+    background: url(/img/internacional/01-new-internacionales.jpg);
     background-size: cover;
 }
 .internacional2{
-    background: url(/img/internacional/02-IN.jpg);
+    background: url(/img/internacional/02-new-internacionales.jpg);
     background-size: cover;
 }
 .internacional3{
-    background: url(/img/internacional/03-IN.jpg);
+    background: url(/img/internacional/03-new-internacionales.jpg);
     background-size: cover;
 }
 .internacional4{
-    background: url(/img/internacional/04-IN.jpg);
+    background: url(/img/internacional/04-new-internacionales.jpg);
     background-size: cover;
 }
 /* //responsive-main-news// */
@@ -190,7 +201,7 @@ td {
         height: 280vh;
         width: 80%;
         border: none;
-        background-color: #0d2033;
+        background-color: $bgContent;
         margin: 0;
 
         display:flex;
@@ -219,7 +230,7 @@ td {
     }
     .titulo_noticias{
         font-size: 25px;
-        color: #fff;
+        color: $blanco;
         
     }
 }
