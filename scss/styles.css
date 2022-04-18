@@ -896,6 +896,7 @@ td {
   .newsMain {
     height: 480vh;
     width: 100%;
+    margin: 0;
   }
   .container-nacional, .container-internacional {
     height: 280vh;
