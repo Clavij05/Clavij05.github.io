@@ -13,11 +13,9 @@ header{
     background-position: center;
     background-size: cover;
 }
-header h1{
-    color: $blanco;
-    margin-left: 20px;
-    letter-spacing: 1px;
-}
+
+/* //NAVEGATION// */
+
 header nav{
     height: 100px;
     width: 100%;
@@ -25,6 +23,11 @@ header nav{
     justify-content: space-between;
     align-items: center;
     
+}
+header h1{
+    color: $blanco;
+    margin-left: 20px;
+    letter-spacing: 1px;
 }
 
 .bar-btn{
@@ -72,50 +75,8 @@ header nav{
 #check:checked ~ .nav-menu li{
     display:block;
 }
-.banner-text{
-    padding: 0 30px;
-    margin-top: 140px;
-    text-align: center;
-    color: $bgOscuro;
-    letter-spacing: 1px;
-}
-.banner-text div a {
-    text-decoration: none;
-}
-.banner-text h2{
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-.banner-text span{
-    color: $button;
-}
-.banner-text h3 {
-    font-size:16px;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-.button1{
-    margin-right: 40px;
-    padding: 10px 30px;
-    background-color: $button;
-    color: $blanco;
-    border-radius:5px;
-}
-.button1:hover{
-    background-color: $blanco;
-    color: $button;
-    transition: .5s;
-}
-.button2{
-    @extend .button1;
-    background-color: $blanco;
-    color:$button;
-}
-.button2:hover{
-    background-color: $button;
-    color: $blanco;
-    transition: .5s;
-}
+
+/* //BANNER-TEXT// */
 
 /* <!--::General-Pie de Pagina::--> */
 
