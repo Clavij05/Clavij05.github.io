@@ -767,7 +767,7 @@ header nav {
   color: rgba(255, 255, 255, 0.8);
   margin: 10px;
   font-family: 'Roboto Mono', monospace;
-  letter-spacing: 1rem;
+  letter-spacing: 0.05rem;
 }
 
 .caja:hover .caja_content {
@@ -895,6 +895,7 @@ td {
 @media screen and (max-width: 800px) {
   .newsMain {
     height: 480vh;
+    width: 100%;
   }
   .container-nacional, .container-internacional {
     height: 280vh;
