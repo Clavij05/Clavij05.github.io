@@ -908,18 +908,18 @@ td {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin-left: 20px;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .container-internacional {
     margin-top: -230px;
   }
   .caja {
-    width: 100%;
+    width: 80%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
