@@ -895,12 +895,12 @@ td {
 @media screen and (max-width: 800px) {
   .newsMain {
     height: 480vh;
-    /* width: 100%; */
+    width: 100%;
     margin: 0;
   }
   .container-nacional, .container-internacional {
     height: 280vh;
-    /* width: 100%; */
+    width: 100%;
     border: none;
     background-color: #0d2033;
     margin: 0;
@@ -917,13 +917,15 @@ td {
             justify-content: center;
   }
   .container-internacional {
-    margin-top: -230px;
+    margin-top: -500px;
   }
   .caja {
     width: 300px;
+    margin-left: 100px;
+    display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+   -ms-flex-pack: center;
+  justify-content: center;
   }
   .col-1 {
     display: -webkit-box;
