@@ -920,7 +920,7 @@ td {
     margin-top: -230px;
   }
   .caja {
-    width: 80%;
+    width: 200px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
