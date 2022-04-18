@@ -895,10 +895,11 @@ td {
 @media screen and (max-width: 800px) {
   .newsMain {
     height: 480vh;
+    width: 100%;
   }
   .container-nacional, .container-internacional {
     height: 280vh;
-    width: 80%;
+    width: 100%;
     border: none;
     background-color: #0d2033;
     margin: 0;
