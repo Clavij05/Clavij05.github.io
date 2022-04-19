@@ -78,6 +78,23 @@ header h1{
 
 /* //BANNER-TEXT// */
 
+@mixin botonPagina ($padding,$margin) {
+  
+    margin-right: 40px;
+    padding: $padding;
+    margin: $margin;
+    background-color: #f80808;
+    color: #fff;
+    border-radius: 5px;
+  }
+  .button1{
+      @include botonPagina(10px 30px ,10px)
+  }
+  
+  .btn-sr{
+      @include botonPagina(0px,0px )
+  }
+
 /* <!--::General-Pie de Pagina::--> */
 
 .pie-pagina{

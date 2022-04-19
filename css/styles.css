@@ -10,7 +10,7 @@ body {
   /* background: #0d2033; */
 }
 
-/* <!--::index-Cabecera::--> */
+/* <!--::CABECERA::--> */
 header {
   width: 100%;
   height: 100vh;
@@ -25,6 +25,7 @@ header h1 {
   margin-left: 20px;
   letter-spacing: 1px;
 }
+/* //NAV-BAR// */
 
 header nav {
   height: 100px;
@@ -92,6 +93,7 @@ header nav {
 #check:checked ~ .nav-menu li {
   display: block;
 }
+/* //BANNER-TEXT// */
 
 .banner-text {
   padding: 0 30px;
@@ -119,7 +121,6 @@ header nav {
   font-weight: 600;
   letter-spacing: 1px;
 }
-
 
 .button1, .button2 {
   margin-right: 40px;
@@ -149,7 +150,8 @@ header nav {
   transition: .5s;
 }
 
-/* <!--::General-Pie de Pagina::--> */
+/* <!--::PIE-DE-PAGINA::--> */
+
 .pie-pagina {
   width: 100%;
   background-color: #0a141d;
@@ -226,7 +228,8 @@ header nav {
   font-size: 15px;
 }
 
-/* <!--::General-Responsive-pie de pagina::--> */
+/* <!--::RESPONSIVE-PIE DE PAGINA::--> */
+
 @media screen and (max-width: 800px) {
   .pie-pagina .grupo-1 {
     width: 90%;
@@ -237,7 +240,8 @@ header nav {
   }
 }
 
-/* <!--::General-Responsive-Cabecera::--> */
+/* <!--::RESPONSIVE-CABECERA::--> */
+
 @media screen and (min-width: 768px) {
   header h1 {
     margin-left: 20px;
@@ -287,7 +291,8 @@ header nav {
   }
 }
 
-/* <!--::index-Contenido::--> */
+/* <!--::MAIN-INDEX::--> */
+
 .titulo-main {
   height: 10vh;
   width: 100%;
@@ -323,6 +328,18 @@ header nav {
 .titulo-main > .button2 {
   text-decoration: none;
 }
+.btn-sr {
+  margin-right: 40px;
+  padding: 10px 30px;
+  text-decoration: none;
+  background-color: #f80808;
+  color: #fff;
+  border-radius: 5px;
+}
+.btn-sr:hover{
+  background-color: #fff;
+  color: #f80808;
+}
 
 .contenido-main {
   height: 85vh;
@@ -351,7 +368,7 @@ header nav {
 }
 
 .card-new {
-  height: 70vh;
+  height: 65vh;
   width: 33.33%;
   border-radius: 6px;
   -webkit-box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.2);
@@ -401,7 +418,7 @@ header nav {
 }
 
 .suscribete {
-  margin-top: 4rem;
+  margin-top: 2.5rem;
   height: 60vh;
   width: 100%;
   background: url(/img/suscribete.jpg);
@@ -474,8 +491,10 @@ header nav {
   background: #3eba8f;
 }
 
-/* <!--::Index-Responsive-main::--> */
+/* <!--::RESPONSIVE-MAIN-INDEX::--> */
+
 @media screen and (max-width: 800px) {
+
   .titulo-main h2 {
     font-size: 10px;
   }
@@ -538,6 +557,9 @@ header nav {
     text-align: center;
   }
 }
+/* //SECCION-CONTACTANOS// */
+
+/* //HEADER// */
 
 .header-contact {
   height: 20vh;
@@ -549,6 +571,7 @@ header nav {
   color: #fdfdfd;
   font-size: 20px;
 }
+/* //MAIN-CONTACTANOS// */
 
 .main_contact {
   margin-top: 30px;
@@ -653,6 +676,8 @@ header nav {
   padding: .3em;
 }
 
+/* //RESPONSIVE-SECCION-CONTACTANOS// */
+
 @media screen and (min-width: 768px) {
   .contact_wrapper {
     display: -ms-grid;
@@ -671,11 +696,8 @@ header nav {
   }
 }
 
-/* 
-.header-news{
-    @extend .header-contact   
-}
- */
+/* //SECCION-NOTICIAS// */
+
 .newsMain {
   height: 300vh;
   width: 100%;
@@ -772,7 +794,22 @@ header nav {
   letter-spacing: 0.05rem;
   /* font-family: 'Montserrat', sans-serif; */
 }
-
+.content_a{
+  text-decoration: none;
+  font-size: 18px;
+  padding-top: 35px;
+  font-family: 'Roboto Mono', monospace;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 400ms ease;
+}
+.content_a:hover{
+  transform: scale(1.03);
+  color: #fdfdfd;
+  
+  
+  
+  
+}
 .caja_content h3 {
   color: rgba(255, 255, 255, 0.8);
   margin: 10px;
@@ -901,7 +938,8 @@ td {
   background-size: cover;
 }
 
-/* //responsive-main-news// */
+/* //RESPONSIVE-MAIN-NOTICIAS// */
+
 @media screen and (max-width: 768px){
   .newsMain {
     height: 100%;
