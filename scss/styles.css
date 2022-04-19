@@ -95,6 +95,24 @@ header h1 {
 }
 
 /* //BANNER-TEXT// */
+.button1 {
+  margin-right: 40px;
+  padding: 10px 30px;
+  margin: 10px;
+  background-color: #f80808;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.btn-sr {
+  margin-right: 40px;
+  padding: 0px;
+  margin: 0px;
+  background-color: #f80808;
+  color: #fff;
+  border-radius: 5px;
+}
+
 /* <!--::General-Pie de Pagina::--> */
 .pie-pagina {
   width: 100%;
