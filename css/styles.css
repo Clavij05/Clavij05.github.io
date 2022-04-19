@@ -230,7 +230,7 @@ header nav {
 
 /* <!--::RESPONSIVE-PIE DE PAGINA::--> */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .pie-pagina .grupo-1 {
     width: 90%;
     -ms-grid-columns: (1fr);
@@ -493,7 +493,7 @@ header nav {
 
 /* <!--::RESPONSIVE-MAIN-INDEX::--> */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 
   .titulo-main h2 {
     font-size: 10px;
